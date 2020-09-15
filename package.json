@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "buefy": "^0.8.10",
+    "github-markdown-css": "^4.0.0",
     "gridsome": "^0.7.12"
   },
   "devDependencies": {
