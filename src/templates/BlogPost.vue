@@ -13,7 +13,7 @@
         <g-image
             v-if="$page.post.image" 
             :src="$page.post.image" alt="Placeholder image" 
-            width="100%" fit="fill"
+            width="100%" fit="fill" 
         />
         <div id="content"  v-html="$page.post.content" />
     </div>
@@ -32,12 +32,6 @@ query blogPost ($path: String!) {
 }
 </page-query>
 
-
-<style>
-#content .img {
-  max-width: 50%;
-}
-</style>
 <script>
 export default {
   metaInfo () {
@@ -49,7 +43,18 @@ export default {
 </script>
 
 <style scoped>
-	.markdown-body {
+#content .img {
+  max-width: 50%;
+}
+
+img {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  max-height: 15em;
+}
+
+.markdown-body {
 		box-sizing: border-box;
 		min-width: 200px;
 		max-width: 980px;
